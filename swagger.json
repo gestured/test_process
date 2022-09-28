@@ -1,0 +1,43 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "",
+    "version" : "1.0.0",
+    "title" : "test_prcs"
+  },
+  "host" : "na2.ai.dm-us.informaticacloud.com:443",
+  "basePath" : "/active-bpel/public/rt/a9Y2GjLPthhkuQFLQ749k3",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/test_prcs" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "test_prcsOperation",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response",
+            "schema" : {
+              "$ref" : "#/definitions/test_prcsResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "test_prcsResponse" : {
+      "type" : "object",
+      "properties" : {
+        "out2" : {
+          "type" : "string",
+          "description" : ""
+        }
+      },
+      "xml" : {
+        "name" : "test_prcsResponse"
+      }
+    }
+  }
+}
